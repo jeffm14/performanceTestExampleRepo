@@ -1,26 +1,28 @@
+  
 #General repository info
 project_name: "MyRepository"
 verification_url: "(URL)"
 
 
 #List of tests
-throughput_test:
-  name: "Test the API"
-  branch_merge: "Master"
-  test_time_minutes: 10
-  tps: 250
-  http_type: POST
-  payload: "(JSON blob)"
-  expected_response: "(JSON blob)"
-  # Acceptance_Criteria
-  failure_rate: 0
-  latency: 100
-
-
-stress_test:
-  name: "StressTest Service"
-  branch_merge: "performance_test"
-  test_time_minutes: 30
-  http_type: GET
-  expected_response: "(JSON blob)"
-  expected_tps: 500
+tests:
+  throughput_test:
+    name: "Test the API"
+    type: "throughput"
+    branch_merge: "Master"
+    test_time_minutes: 10
+    tps: 250
+    http_type: POST
+    payload: "(JSON blob)"
+    expected_response: "(JSON blob)"
+    # Acceptance_Criteria
+    failure_rate: 0
+    latency: 100
+  stress_test:
+    name: "StressTest Service"
+    type: "stress"
+    branch_merge: "performance_test"
+    test_time_minutes: 30
+    http_type: GET
+    expected_response: "(JSON blob)"
+    expected_tps: 500
