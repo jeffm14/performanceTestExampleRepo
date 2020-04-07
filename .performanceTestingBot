@@ -8,7 +8,7 @@ tests:
   throughput_test:
     name: "Test the API"
     type: "throughput"
-    compare_branch: "develop"
+    compare_branch: "'jeffm14vt-patch-2'"
     test_time_minutes: 10
     tps: 250
     http_type: POST
