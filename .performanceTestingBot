@@ -1,5 +1,4 @@
-  
-#General repository info
+ #General repository info
 project_name: "MyRepository"
 verification_url: "(URL)"
 
@@ -9,7 +8,7 @@ tests:
   throughput_test:
     name: "Test the API"
     type: "throughput"
-    branch_merge: "Master"
+    compare_branch: "develop"
     test_time_minutes: 10
     tps: 250
     http_type: POST
@@ -19,9 +18,9 @@ tests:
     failure_rate: 0
     latency: 100
   stress_test:
-    name: "StressTest Service"
+    name: "StressTest Service"1
     type: "stress"
-    branch_merge: "performance_test"
+    compare_branch: "performance_test"
     test_time_minutes: 30
     http_type: GET
     expected_response: "(JSON blob)"
