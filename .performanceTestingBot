@@ -18,7 +18,7 @@ tests:
     failure_rate: 0
     latency: 100
   stress_test:
-    name: "StressTest Service"1
+    name: "StressTest Service"
     type: "stress"
     compare_branch: "performance_test"
     test_time_minutes: 30
