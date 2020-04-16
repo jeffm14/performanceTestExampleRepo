@@ -17,6 +17,7 @@ tests:
     # Acceptance_Criteria
     failure_rate: 0
     latency: 100
+    endpoint: "http:www.wherever.com/post/endpoint"
   stress_test:
     name: "StressTest Service"
     type: "stress"
@@ -25,3 +26,4 @@ tests:
     http_type: GET
     expected_response: "(JSON blob)"
     expected_tps: 500
+    endpoint: "http:www.wherever.com/get/endpoint"
