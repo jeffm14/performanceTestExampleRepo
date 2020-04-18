@@ -26,5 +26,5 @@ tests:
     test_time_minutes: 30
     http_type: GET
     expected_response: "(JSON blob)"
-    expected_tps: 500
+    expected_tps: 100
     endpoint: "http:www.wherever.com/get/endpoint"
