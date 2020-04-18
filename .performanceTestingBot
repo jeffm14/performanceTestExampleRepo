@@ -17,7 +17,7 @@ tests:
     # Acceptance_Criteria
     failure_rate: 0
     latency: 100
-    headers: "{'Content-Type': 'application/json'"
+    headers: "{'Content-Type': 'application/json'}"
     endpoint: "https://puxeodwjp0.execute-api.us-east-1.amazonaws.com/default/performanceBotExampleGET"
   stress_test:
     name: "StressTest Service"
