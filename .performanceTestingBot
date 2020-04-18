@@ -23,7 +23,7 @@ tests:
     name: "StressTest Service"
     type: "stress"
     compare_branch: "performance_test"
-    test_time_minutes: 30
+    test_time_seconds: 30
     http_type: GET
     expected_response: "(JSON blob)"
     expected_tps: 100
