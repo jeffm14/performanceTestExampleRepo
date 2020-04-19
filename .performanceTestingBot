@@ -10,8 +10,8 @@ tests:
     type: "throughput"
     compare_branch: "develop"
     test_time_minutes: 10
-    tps: 250
-    http_type: POST
+    tps: 20
+    http_type: GET
     payload: "(JSON blob)"
     expected_response: "(JSON blob)"
     # Acceptance_Criteria
@@ -19,12 +19,3 @@ tests:
     latency: 100
     headers: "{'Content-Type': 'application/json'}"
     endpoint: "https://puxeodwjp0.execute-api.us-east-1.amazonaws.com/default/performanceBotExampleGET"
-  stress_test:
-    name: "StressTest Service"
-    type: "stress"
-    compare_branch: "performance_test"
-    test_time_seconds: 30
-    http_type: GET
-    expected_response: "(JSON blob)"
-    expected_tps: 100
-    endpoint: "http:www.wherever.com/get/endpoint"
