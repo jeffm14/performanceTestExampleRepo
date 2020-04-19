@@ -1,6 +1,6 @@
  #General repository info
 project_name: "MyRepository"
-verification_url: "www.google.com"
+verification_url: "https://puxeodwjp0.execute-api.us-east-1.amazonaws.com/default/performanceBotExampleGET"
 
 
 #List of tests
