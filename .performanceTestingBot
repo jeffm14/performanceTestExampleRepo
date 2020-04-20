@@ -17,5 +17,5 @@ tests:
     # Acceptance_Criteria
     failure_rate: 0
     latency: 100
-    headers:
+    # headers:
     endpoint: "https://puxeodwjp0.execute-api.us-east-1.amazonaws.com/default/performanceBotExampleGET"
