@@ -24,6 +24,6 @@ tests:
     test_time_seconds: 10
     tps: 20
     http_type: POST 
-    payload: '[{"Data": "More Data"}]'
+    payload: '{"Data": "More Data"}'
     headers: '[{"Bearer Token": "application/json"}]'
     endpoint: "https://puxeodwjp0.execute-api.us-east-1.amazonaws.com/default/performanceBotExampleGET"
