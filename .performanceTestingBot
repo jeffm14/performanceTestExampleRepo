@@ -14,7 +14,7 @@ tests:
     tps: 20
     http_type: GET
     payload: "(JSON blob)"
-    headers: '[{"Accept": "application/json"}]'
+    headers: '[{"Accept": "application/json"}, {"SomeHeader": "SomeValue"}]'
     endpoint: "https://puxeodwjp0.execute-api.us-east-1.amazonaws.com/default/performanceBotExampleGET"
   post_test:
     name: "Test the PUT API"
