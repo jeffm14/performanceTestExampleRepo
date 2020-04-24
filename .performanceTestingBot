@@ -14,9 +14,5 @@ tests:
     tps: 20
     http_type: GET
     payload: "(JSON blob)"
-    expected_response: "(JSON blob)"
-    # Acceptance_Criteria
-    failure_rate: 0
-    latency: 100
     headers: '[{"Accept": "application/json"}]'
     endpoint: "https://puxeodwjp0.execute-api.us-east-1.amazonaws.com/default/performanceBotExampleGET"
