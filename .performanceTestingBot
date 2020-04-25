@@ -22,7 +22,7 @@ tests:
     # compare_branch: "jeffm14vt-patch-3"
     base_branch: "master"
     test_time_seconds: 5
-    tps: 160
+    tps: 100
     http_type: POST 
     payload: '{"Data": "More Data"}'
     headers: '[{"Bearer Token": "application/json"}]'
