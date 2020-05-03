@@ -1,6 +1,6 @@
 project_name: Name
 verification_url: https://ltino1c562.execute-api.us-east-1.amazonaws.com/default/performanceTestingVerificationTest
-throughput_tests:
+throughput_testss:
 - name: Test GET the API
   base_branch: master
   compare_branch: develop
@@ -16,7 +16,8 @@ throughput_tests:
   base_branch: "master"
   test_time_seconds: 5
   tps: 100
-  http_type: POST 
+  http_type: POST
   payload: '{"Data": "More Data"}'
-  headers: '[{"Bearer Token": "application/json"}]'
+  headers:
+  - Bearer Token: application/json
   endpoint: "https://gwuwuuu4c1.execute-api.us-east-1.amazonaws.com/default/performanceBotExamplePOST"
