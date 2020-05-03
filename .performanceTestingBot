@@ -1,6 +1,6 @@
 project_name: Name
 verification_url: https://ltino1c562.execute-api.us-east-1.amazonaws.com/default/performanceTestingVerificationTest
-tests:
+throughput_tests:
 - name: Test GET the API
   base_branch: master
   compare_branch: develop
