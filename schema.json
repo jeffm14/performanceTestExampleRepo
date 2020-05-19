@@ -1,0 +1,222 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "additionalProperties": true,
+    "required": [
+        "project_name",
+        "verification_url",
+        "throughput_tests"
+    ],
+    "properties": {
+        "project_name": {
+            "$id": "#/properties/project_name",
+            "type": "string",
+            "title": "The Project_name Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Name"
+            ]
+        },
+        "verification_url": {
+            "$id": "#/properties/verification_url",
+            "type": "string",
+            "title": "The Verification_url Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "http://www.someurl.com"
+            ]
+        },
+        "throughput_tests": {
+            "$id": "#/properties/throughput_tests",
+            "type": "array",
+            "title": "The Throughput_tests Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "tps": 20.0,
+                        "http_type": "GET",
+                        "test_time_seconds": 10.0,
+                        "base_branch": "master",
+                        "headers": [
+                            {
+                                "Accept": "application/json"
+                            },
+                            {
+                                "SomeHeader": "SomeValue"
+                            }
+                        ],
+                        "endpoint": "https://puxeodwjp0.execute-api.us-east-1.amazonaws.com/default/performanceBotExampleGET",
+                        "compare_branch": "develop",
+                        "name": "Test the API"
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/throughput_tests/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "base_branch": "master",
+                        "headers": [
+                            {
+                                "Accept": "application/json"
+                            },
+                            {
+                                "SomeHeader": "SomeValue"
+                            }
+                        ],
+                        "test_time_seconds": 10.0,
+                        "endpoint": "https://puxeodwjp0.execute-api.us-east-1.amazonaws.com/default/performanceBotExampleGET",
+                        "compare_branch": "develop",
+                        "name": "Test the API",
+                        "tps": 20.0,
+                        "http_type": "GET"
+                    }
+                ],
+                "additionalProperties": true,
+                "required": [
+                    "name",
+                    "base_branch",
+                    "test_time_seconds",
+                    "tps",
+                    "http_type",
+                    "headers",
+                    "endpoint"
+                ],
+                "properties": {
+                    "name": {
+                        "$id": "#/properties/throughput_tests/items/properties/name",
+                        "type": "string",
+                        "title": "The Name Schema",
+                        "description": "Name of the test.",
+                        "default": "",
+                        "examples": [
+                            "Test the API"
+                        ]
+                    },
+                    "compare_branch": {
+                        "$id": "#/properties/throughput_tests/items/properties/compare_branch",
+                        "type": "string",
+                        "title": "The Compare_branch Schema",
+                        "description": "(Optional): The name of the branch being compared",
+                        "default": "",
+                        "examples": [
+                            "develop"
+                        ]
+                    },
+                    "base_branch": {
+                        "$id": "#/properties/throughput_tests/items/properties/base_branch",
+                        "type": "string",
+                        "title": "The Base_branch Schema",
+                        "description": "Name of the base branch to trigger a test",
+                        "default": "master",
+                        "examples": [
+                            "master"
+                        ]
+                    },
+                    "test_time_seconds": {
+                        "$id": "#/properties/throughput_tests/items/properties/test_time_seconds",
+                        "type": "integer",
+                        "title": "The Test_time_seconds Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                            10.0
+                        ]
+                    },
+                    "tps": {
+                        "$id": "#/properties/throughput_tests/items/properties/tps",
+                        "type": "integer",
+                        "title": "The Tps Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                            20.0
+                        ]
+                    },
+                    "http_type": {
+                        "$id": "#/properties/throughput_tests/items/properties/http_type",
+                        "type": "string",
+                        "title": "The Http_type Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "GET",
+                        "examples": [
+                            "GET",
+                            "POST"
+                        ]
+                    },
+                    "headers": {
+                        "$id": "#/properties/throughput_tests/items/properties/headers",
+                        "type": "array",
+                        "title": "The Headers Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": [],
+                        "examples": [
+                            [
+                                {
+                                    "Accept": "application/json"
+                                },
+                                {
+                                    "SomeHeader": "SomeValue"
+                                }
+                            ]
+                        ],
+                        "additionalItems": true,
+                        "items": {
+                            "$id": "#/properties/throughput_tests/items/properties/headers/items",
+                            "type": "object",
+                            "title": "The Items Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "Accept": "application/json"
+                                },
+                                {
+                                    "SomeHeader": "SomeValue"
+                                }
+                            ],
+                            "additionalProperties": true,
+                            "required": [
+                            ],
+                            "properties": {
+                                "Accept": {
+                                    "$id": "#/properties/throughput_tests/items/properties/headers/items/properties/Accept",
+                                    "type": "string",
+                                    "title": "The Accept Schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "application/json"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "endpoint": {
+                        "$id": "#/properties/throughput_tests/items/properties/endpoint",
+                        "type": "string",
+                        "title": "The Endpoint Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "https://puxeodwjp0.execute-api.us-east-1.amazonaws.com/default/performanceBotExampleGET"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
