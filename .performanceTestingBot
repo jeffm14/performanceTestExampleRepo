@@ -21,3 +21,12 @@ throughput_tests:
   headers:
   - Bearer Token: application/json
   endpoint: "https://gwuwuuu4c1.execute-api.us-east-1.amazonaws.com/default/performanceBotExamplePOST"
+stress_tests:
+- name: Stress test the GET API
+  base_branch: master
+  compare_branch: stress
+  endpoint: https://puxeodwjp0.execute-api.us-east-1.amazonaws.com/default/performanceBotExampleGET
+  headers:
+  - Accept: application/json
+  - SomeHeader: SomeValue
+  http_type: GET
