@@ -11,6 +11,7 @@ throughput_tests:
   test_time_seconds: 10
   tps: 20
 - name: "Test the PUT API"
+  base_branch: master
   compare_branch: "jeffm14vt-patch-3"
   test_time_seconds: 5
   tps: 10
