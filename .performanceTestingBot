@@ -1,4 +1,4 @@
-project_name: Name
+project_name: TestMyAPI
 verification_url: https://ltino1c562.execute-api.us-east-1.amazonaws.com/default/performanceTestingVerificationTest
 throughput_tests:
 - name: Test GET the API
