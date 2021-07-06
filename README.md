@@ -1,7 +1,2 @@
 # testPerformance
 Testing the performanceTestingBotApp
-
-
-
-
-
